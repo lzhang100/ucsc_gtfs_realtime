@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.google.protobuf.GeneratedMessageTest
+-------------------------------------------------------------------------------
+Tests run: 81, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 s - in com.google.protobuf.GeneratedMessageTest

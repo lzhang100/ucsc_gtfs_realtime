@@ -1,0 +1,27 @@
+
+Under C:\Users\Lester\Desktop\3.3.0\protoc-3.3.0-win32\bin
+Grab the protoc.exe
+
+Under C:\Users\Lester\Desktop\3.3.0\protobuf-3.3.0\protobuf-3.3.0\src
+Drop the protoc.exe
+
+Under C:\Users\Lester\Desktop\3.3.0\protobuf-3.3.0\protobuf-3.3.0\java
+mvn test
+mvn install
+
+Under C:\Users\Lester\Desktop\3.3.0\protobuf-3.3.0\protobuf-3.3.0\java\core\target
+Grab the protobuf.;protobuf-java-3.3.0.jar
+
+
+Under C:\Users\Lester\Desktop\3.3.0\protobuf-3.3.0\protobuf-3.3.0\examples
+Place the protobuf.;protobuf-java-3.3.0.jar into this folder
+This is to compile the AddPerson and ListPerson Java programs
+
+protoc --java_out=. addressbook.proto
+javac AddPerson.java ListPeople.java com/example/tutorial/AddressBookProtos.java -cp .;protobuf-java-3.3.0.jar
+
+To run the AddPerson Java program
+java -cp .;protobuf-java-3.3.0.jar AddPerson protoc_middleman
+
+To run the ListPeople Java program
+java -cp .;protobuf-java-3.3.0.jar ListPeople protoc_middleman
